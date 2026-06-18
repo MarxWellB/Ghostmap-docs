@@ -1,0 +1,143 @@
+/**
+ * GhostMap Docs — theme tokens
+ * Paleta tomada del landing: fondo casi negro, acentos violeta/morado.
+ */
+
+:root {
+  --ifm-color-primary: #7c3aed;
+  --ifm-color-primary-dark: #6d28d9;
+  --ifm-color-primary-darker: #6224cc;
+  --ifm-color-primary-darkest: #511da8;
+  --ifm-color-primary-light: #8b5cf6;
+  --ifm-color-primary-lighter: #9d72f7;
+  --ifm-color-primary-lightest: #c4b5fd;
+
+  --ifm-code-font-size: 90%;
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+  --ifm-font-family-monospace: 'JetBrains Mono', 'Fira Code', SFMono-Regular, Menlo, Consolas, monospace;
+
+  --ifm-heading-font-weight: 700;
+  --ifm-code-border-radius: 6px;
+
+  --docusaurus-highlighted-code-line-bg: rgba(124, 58, 237, 0.15);
+
+  --ghost-green: #4ade80;
+  --ghost-blue: #60a5fa;
+}
+
+/* Dark mode = the only mode, matching the landing page */
+[data-theme='dark'] {
+  --ifm-color-primary: #a78bfa;
+  --ifm-color-primary-dark: #9166f5;
+  --ifm-color-primary-darker: #855cf0;
+  --ifm-color-primary-darkest: #6d3ad6;
+  --ifm-color-primary-light: #bca6fb;
+  --ifm-color-primary-lighter: #c8b5fc;
+  --ifm-color-primary-lightest: #ece5ff;
+
+  --ifm-background-color: #0a0a0f;
+  --ifm-background-surface-color: #11111a;
+  --ifm-navbar-background-color: rgba(10, 10, 15, 0.85);
+  --ifm-footer-background-color: #0a0a0f;
+  --ifm-toc-border-color: #232333;
+  --ifm-color-emphasis-300: #2a2a3c;
+  --ifm-hr-border-color: #232333;
+
+  --docusaurus-highlighted-code-line-bg: rgba(167, 139, 250, 0.15);
+}
+
+/* Navbar */
+.navbar {
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+  backdrop-filter: blur(8px);
+}
+
+.navbar__title {
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.navbar-cta {
+  background: linear-gradient(135deg, #7c3aed, #a78bfa);
+  color: #fff !important;
+  border-radius: 8px;
+  padding: 0.4rem 0.9rem !important;
+  font-weight: 600;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.navbar-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.4);
+  text-decoration: none;
+}
+
+.navbar-cta::after {
+  display: none !important;
+}
+
+/* Sidebar */
+.theme-doc-sidebar-container {
+  border-right: 1px solid var(--ifm-toc-border-color) !important;
+}
+
+.menu__link--active:not(.menu__link--sublist) {
+  background-color: rgba(167, 139, 250, 0.12);
+  color: var(--ifm-color-primary-lightest);
+}
+
+.menu__link:hover {
+  background-color: rgba(167, 139, 250, 0.08);
+}
+
+/* Code blocks */
+div[class^='codeBlockContainer'] {
+  border: 1px solid var(--ifm-toc-border-color);
+}
+
+/* Headings */
+h1, h2, h3 {
+  letter-spacing: -0.01em;
+}
+
+article h1 {
+  font-size: 2.25rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Ghost-tree style ASCII blocks: keep monospace, slightly tighter line-height */
+pre code {
+  line-height: 1.6;
+}
+
+/* Admonitions tuned to GhostMap status colors */
+.theme-admonition-tip {
+  --ifm-color-success: var(--ghost-green);
+}
+
+/* Links */
+.markdown a {
+  text-decoration: underline;
+  text-decoration-color: rgba(167, 139, 250, 0.35);
+  text-decoration-thickness: 1px;
+  transition: text-decoration-color 0.15s ease;
+}
+
+.markdown a:hover {
+  text-decoration-color: var(--ifm-color-primary);
+}
+
+/* Status badges used inline in tables/text */
+.ghost-status {
+  display: inline-block;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.8em;
+  padding: 0.05rem 0.45rem;
+  border-radius: 4px;
+  border: 1px solid currentColor;
+}
+
+.footer--dark {
+  --ifm-footer-background-color: #0a0a0f;
+  border-top: 1px solid #1c1c28;
+}
