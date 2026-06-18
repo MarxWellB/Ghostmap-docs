@@ -6,6 +6,8 @@ sidebar_label: Disclaimer
 
 # Disclaimer
 
+> **Nota:** Esta página está en inglés porque define límites técnicos y legales que tienen que ser inequívocos. La versión definitiva de los documentos legales es la inglesa. Si necesitas la información en español, los puntos clave están resumidos en [Estado del proyecto](/status/estado-del-proyecto).
+
 **Effective date:** June 18, 2026 · **Version:** 1.0
 
 :::caution

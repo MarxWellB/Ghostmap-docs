@@ -6,6 +6,8 @@ sidebar_label: Privacy Policy
 
 # Privacy Policy
 
+> **Nota:** Esta página está en inglés porque la política tiene efecto contractual y debe ser inequívoca. La versión definitiva es la inglesa.
+
 **Effective date:** June 18, 2026 · **Version:** 1.0
 
 :::tip The whole policy in one line
@@ -37,11 +39,13 @@ GhostMap itself makes zero outbound network requests. The VS Code application an
 
 ## 5. Third-party services
 
-GhostMap integrates with no third-party services, no analytics provider, no error-tracking service, no advertising network, and no AI service. The Tree-sitter parsers shipped inside the extension are static WebAssembly files that run locally with no network capability.
+The GhostMap **extension** integrates with no third-party services, no analytics provider, no error-tracking service, no advertising network, and no AI service. The Tree-sitter parsers shipped inside the extension are static WebAssembly files that run locally with no network capability.
+
+The GhostMap **marketing site and documentation site** load typography from Google Fonts (`fonts.googleapis.com` and `fonts.gstatic.com`) on page render. This is a request from your browser to Google in order to fetch the font files; Google may log the request as it would any HTTP request to its servers. We use no other third-party services on these surfaces: no analytics, no tag manager, no advertising, no embeds. A future revision of the sites may self-host the fonts to remove this last external request.
 
 ## 6. Cookies and tracking
 
-The GhostMap extension is not a web property and uses no cookies. The marketing site and documentation site may use minimal server logs operated by their hosting provider; consult that provider for details. The maintainers do not run analytics on either site.
+The GhostMap extension is not a web property and uses no cookies. The marketing site and documentation site do not set cookies and do not run analytics. Server access logs may be kept by the hosting provider for the standard short retention window; consult the provider's policy for details. The maintainers do not access or use those logs.
 
 ## 7. Children's privacy
 

@@ -14,10 +14,15 @@ const config = {
   url: 'https://docs.ghostmap.dev',
   baseUrl: '/',
 
-  organizationName: 'ghostmap',
-  projectName: 'ghostmap-docs',
+  // Required for `npm run deploy` to push to gh-pages on the correct repo.
+  organizationName: 'MarxWellB',
+  projectName: 'Ghostmap-docs',
+  deploymentBranch: 'gh-pages',
+
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
+  onBrokenAnchors: 'warn',
   markdown: {
     hooks: {
       onBrokenMarkdownLinks: 'warn',
@@ -29,6 +34,30 @@ const config = {
     locales: ['es'],
   },
 
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'theme-color',
+        content: '#080810',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'author',
+        content: 'GhostMap contributors',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'referrer',
+        content: 'strict-origin-when-cross-origin',
+      },
+    },
+  ],
+
   presets: [
     [
       'classic',
@@ -37,11 +66,17 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
-          editUrl: undefined,
+          editUrl: 'https://github.com/MarxWellB/Ghostmap-docs/edit/main/',
+          showLastUpdateTime: true,
         },
         blog: false,
         theme: {
           customCss: './src/css/custom.css',
+        },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          filename: 'sitemap.xml',
         },
       }),
     ],
@@ -50,10 +85,18 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/ghostmap-social-card.png',
+      image: 'img/ghost-logo.svg',
       colorMode: {
         defaultMode: 'dark',
         respectPrefersColorScheme: false,
+      },
+      announcementBar: {
+        id: 'v1-prerelease',
+        content:
+          'GhostMap V1 está en pre-release. La sintaxis @ghost y los settings son estables, pero pueden ajustarse en versiones futuras antes de la 1.0.',
+        backgroundColor: '#0e0e1a',
+        textColor: '#eeeef5',
+        isCloseable: true,
       },
       navbar: {
         title: 'GhostMap',
@@ -90,6 +133,7 @@ const config = {
               {label: 'Inicio', to: '/'},
               {label: 'Roadmap', to: '/roadmap/vision-v2'},
               {label: 'Estado del proyecto', to: '/status/estado-del-proyecto'},
+              {label: 'Changelog', to: '/changelog'},
             ],
           },
           {
@@ -98,6 +142,17 @@ const config = {
               {label: 'Guía rápida', to: '/get-started/instalacion'},
               {label: 'Conceptos', to: '/guide/symbol'},
               {label: 'Referencia', to: '/reference/sintaxis'},
+              {label: 'Solución de problemas', to: '/troubleshooting'},
+              {label: 'FAQ', to: '/faq'},
+            ],
+          },
+          {
+            title: 'Legal',
+            items: [
+              {label: 'Privacy Policy', to: '/legal/privacy'},
+              {label: 'Terms of Use', to: '/legal/terms'},
+              {label: 'Third-Party Notices', to: '/legal/notices'},
+              {label: 'Disclaimer', to: '/legal/disclaimer'},
             ],
           },
           {
@@ -109,19 +164,60 @@ const config = {
             ],
           },
         ],
-        copyright: `MIT Licensed · Hecho con 💜 por developers · © ${new Date().getFullYear()} GhostMap`,
+        copyright: `MIT Licensed · © ${new Date().getFullYear()} GhostMap`,
       },
       prism: {
         theme: prismThemes.dracula,
         darkTheme: prismThemes.dracula,
-        additionalLanguages: ['typescript', 'python', 'json', 'bash'],
+        additionalLanguages: [
+          'typescript',
+          'tsx',
+          'jsx',
+          'python',
+          'java',
+          'csharp',
+          'cpp',
+          'c',
+          'go',
+          'rust',
+          'php',
+          'ruby',
+          'dart',
+          'scala',
+          'solidity',
+          'kotlin',
+          'swift',
+          'elixir',
+          'groovy',
+          'julia',
+          'bash',
+          'shell-session',
+          'powershell',
+          'json',
+          'yaml',
+          'toml',
+          'diff',
+          'markdown',
+        ],
       },
       docs: {
         sidebar: {
-          hideable: false,
+          hideable: true,
           autoCollapseCategories: false,
         },
       },
+      tableOfContents: {
+        minHeadingLevel: 2,
+        maxHeadingLevel: 4,
+      },
+      // Algolia DocSearch placeholder. Apply at https://docsearch.algolia.com/apply
+      // then fill in the credentials below and uncomment.
+      // algolia: {
+      //   appId: 'YOUR_APP_ID',
+      //   apiKey: 'YOUR_SEARCH_API_KEY',
+      //   indexName: 'ghostmap',
+      //   contextualSearch: true,
+      // },
     }),
 };
 

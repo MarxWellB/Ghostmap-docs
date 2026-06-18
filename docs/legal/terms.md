@@ -6,6 +6,8 @@ sidebar_label: Terms of Use
 
 # Terms of Use
 
+> **Nota:** Esta página está en inglés porque los términos tienen efecto contractual y deben ser inequívocos. La versión definitiva es la inglesa.
+
 **Effective date:** June 18, 2026 · **Version:** 1.0
 
 :::caution Short version
