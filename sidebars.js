@@ -69,6 +69,17 @@ const sidebars = {
       label: 'Estado',
       items: [
         'status/estado-del-proyecto',
+        'changelog',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Legal',
+      items: [
+        'legal/privacy',
+        'legal/terms',
+        'legal/notices',
+        'legal/disclaimer',
       ],
     },
   ],

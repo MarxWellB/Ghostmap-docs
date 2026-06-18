@@ -12,8 +12,8 @@ GhostMap es una extensión de VS Code. No requiere configuración de servidor, c
 
 | Requisito | Valor |
 |---|---|
-| Visual Studio Code | Versión reciente recomendada (la extensión usa APIs estables de VS Code, no hay versión mínima documentada de forma rígida). |
-| Sistema operativo | Windows, macOS, Linux — cualquier plataforma donde corra VS Code. |
+| Visual Studio Code | **1.85 o superior** (declarado en `engines.vscode` del manifiesto). VS Code te avisará si tu versión es anterior. |
+| Sistema operativo | Windows, macOS, Linux. Cualquier plataforma donde corra VS Code. |
 
 :::note
 GhostMap fue desarrollado y probado principalmente en Windows. Las rutas de archivos usan `path.sep` para compatibilidad cross-platform, pero macOS y Linux no han sido verificados de forma exhaustiva en V1. Si encuentras un problema específico de plataforma, repórtalo en GitHub.
@@ -23,8 +23,8 @@ GhostMap fue desarrollado y probado principalmente en Windows. Las rutas de arch
 
 No necesitas instalar nada extra solo para usar GhostMap. La extensión incluye:
 
-- **20 gramáticas Tree-sitter compiladas a WASM** — empaquetadas dentro de la extensión. No se descargan en tiempo de ejecución.
-- **Regex fallback** — funciona sin ninguna dependencia externa.
+- **19 gramáticas Tree-sitter compiladas a WASM**, empaquetadas dentro de la extensión. No se descargan en tiempo de ejecución.
+- **Regex fallback**, que funciona sin ninguna dependencia externa.
 
 La única dependencia opcional que mejora la calidad del árbol es tener activo un **language server (LSP)** para tu lenguaje. GhostMap lo usa automáticamente si está disponible; si no lo está, cae al siguiente nivel de extracción sin que tengas que hacer nada.
 
@@ -32,7 +32,7 @@ La única dependencia opcional que mejora la calidad del árbol es tener activo 
 
 GhostMap no tiene un requisito de RAM mínima documentado. Sin embargo, hay comportamientos a tener en cuenta en entornos con poca memoria:
 
-- Con **80–90% de RAM en uso**, el arranque de un language server puede tardar entre 5 y 30 segundos. GhostMap espera hasta 800 ms y luego cae al fallback automáticamente — el árbol sigue apareciendo, pero sin el detalle que daría el LSP.
+- Con **80–90% de RAM en uso**, el arranque de un language server puede tardar entre 5 y 30 segundos. GhostMap espera hasta 800 ms y luego cae al fallback automáticamente. El árbol sigue apareciendo, pero sin el detalle que daría el LSP.
 - En esas condiciones, el **Ghost Index** es especialmente útil: en lugar de esperar al LSP en cada apertura, el árbol carga desde el snapshot local en menos de 50 ms.
 
 ## Proyectos muy grandes
@@ -49,4 +49,4 @@ Si trabajas habitualmente con archivos que superan estos límites, puedes subirl
 
 ## Resumen rápido
 
-Si VS Code corre en tu máquina, GhostMap corre en tu máquina. Los límites de rendimiento aparecen con archivos muy grandes o bajo presión de RAM extrema — no en uso normal.
+Si VS Code 1.85 o superior corre en tu máquina, GhostMap corre en tu máquina. Los límites de rendimiento aparecen con archivos muy grandes o bajo presión de RAM extrema, no en uso normal.
