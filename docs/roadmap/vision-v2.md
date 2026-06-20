@@ -6,7 +6,7 @@ sidebar_label: Visión v2
 
 # Roadmap — Visión v2
 
-GhostMap Core —todo lo descrito en el resto de esta documentación— es y seguirá siendo **gratuito y de código abierto**. Lo que sigue es la visión para **GhostMap Enterprise**, pensado para equipos donde esta información necesita fluir entre la capa técnica, operativa y directiva.
+GhostMap Core —todo lo descrito en el resto de esta documentación— es y seguirá siendo **gratuito y de código abierto** bajo la licencia MIT, en el plan **Community** para uso personal, estudiantes, OSS y desarrolladores individuales. Lo que sigue es la visión para **GhostMap Enterprise**, pensado para equipos donde esta información necesita fluir entre la capa técnica, operativa y directiva. La estructura de planes que financia ese camino (Commercial, Early Commercial, Early Supporter y Enterprise) está descrita en [Planes y precios](/legal/planes), y el detalle del programa de descuentos por antigüedad en el [Programa Early Access](/legal/programa-early-access).
 
 ## Ghost Project Index & Ghost Watcher
 

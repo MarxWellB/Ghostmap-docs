@@ -87,6 +87,14 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Planes',
+      items: [
+        'legal/planes',
+        'legal/programa-early-access',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Legal',
       items: [
         'legal/privacy',

@@ -44,9 +44,11 @@ GhostMap incorporates third-party components, each licensed under its own terms.
 
 "GhostMap", the GhostMap ghost mark, and the Ghost-prefixed product vocabulary (Ghost Tree, Ghost Engine, Ghost Index, Ghost Anchors, Ghost Diagnostics, Ghost Comments, Ghost Threads, Ghost Graph, Ghost Watcher) are used to identify the extension and its features. You may reference these names in technical writing about the extension. You may not use them to suggest endorsement of a product or service that is not the GhostMap extension itself.
 
-## 7. Future commercial offering
+## 7. Plans and future commercial offering
 
-A future "GhostMap Enterprise" tier is anticipated for V2. The MIT License continues to apply to the V1 Core and its open source codebase. Enterprise components, if and when released, will carry their own license terms that will be disclosed at that time.
+The MIT License continues to apply to the GhostMap V1 open source codebase. Alongside that, the project offers paid commercial plans — **Commercial**, **Early Commercial**, **Early Supporter** and the upcoming **Enterprise** — described in [Planes y precios](/legal/planes). The **Community** plan ($0) remains the free path for personal use, students, open source projects and individual developers.
+
+Commercial plans grant authorized commercial use, optional early access to V2 features, and seniority-tier discounts under the [Early Access Program Policy](/legal/programa-early-access). Enterprise components, when released, will carry their own additional license terms that will be disclosed at sign-up; nothing in those additional terms revokes the MIT grant on the open source codebase.
 
 ## 8. Privacy
 
