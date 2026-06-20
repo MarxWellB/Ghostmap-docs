@@ -2,7 +2,6 @@
 id: planes
 title: Planes y precios
 sidebar_label: Planes y precios
-description: Resumen de los planes de GhostMap (Community, Commercial, Early Commercial, Early Supporter y Enterprise), con su precio, audiencia y objetivo.
 ---
 
 # Planes y precios
@@ -85,7 +84,7 @@ Incluye **todo lo de Commercial** más:
 
 **Objetivo:** financiar el desarrollo de V2 y construir una comunidad de empresas comprometidas con la visión a largo plazo.
 
-:::info[Por qué $3 vs $5]
+:::info Por qué $3 vs $5
 La diferencia entre Commercial y Early Commercial es deliberadamente pequeña.
 Una empresa que cree en la visión de V2 elegirá Early Commercial (más beneficios, descuento permanente). Una empresa que solo necesita V1 hoy puede quedarse en Commercial sin sentir presión.
 Eso permite segmentar sin complicar el producto.

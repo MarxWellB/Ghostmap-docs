@@ -2,7 +2,6 @@
 id: programa-early-access
 title: Early Access Program Policy
 sidebar_label: Programa Early Access
-description: Policy for the GhostMap Early Access program — eligible plans, seniority tiers, discount benefits, duration and termination.
 ---
 
 # GhostMap Early Access Program Policy
