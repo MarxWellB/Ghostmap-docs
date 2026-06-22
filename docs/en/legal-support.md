@@ -6,12 +6,10 @@ slug: /en/legal-support
 
 # Legal & Support — English summary
 
-> **Legal documents are kept in English as the authoritative version.** This page
-> is a plain-language English summary so English readers can find the legal
-> entry points without needing the Spanish docs. The `LICENSE`,
+> **Legal documents are authoritative in English.** This page points English
+> readers to the legal and support pages. The `LICENSE`,
 > `THIRD_PARTY_NOTICES.txt`, Privacy Policy, Terms of Use, and Disclaimer files
-> shipped with the extension and rendered in the docs site are the documents
-> that govern any actual use.
+> shipped with the extension and rendered in the docs site govern actual use.
 
 ## License (summary)
 
@@ -69,10 +67,8 @@ Voluntary supporter platforms (for example Lemon Squeezy, Patreon, Ko-fi) are
 platform becomes active, the link will appear here and on the docs site. The
 project does not publish placeholder URLs that do not resolve.
 
-## Spanish detail
+## Spanish docs
 
-The detailed legal pages live under [/legal/](/legal/privacy). They are
-English-authoritative documents presented inside the Spanish docs structure,
-with Spanish navigation around them. Detailed Spanish guidance for
-status, support and known limits is at
+The legal pages live under [/legal/](/legal/privacy) and are authoritative in
+English. Spanish project status, support and known limits are at
 [Estado del proyecto (ES)](/status/estado-del-proyecto).

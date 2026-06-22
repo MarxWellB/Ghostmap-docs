@@ -6,10 +6,9 @@ slug: /en/overview
 
 # GhostMap — English overview
 
-> **About this section.** The detailed GhostMap documentation is written in Spanish.
-> This English area is an intentional **overview / quick-start / legal entry point** for
-> English readers. It is **not** a full translation of the Spanish documentation. Each
-> page links back to the equivalent Spanish page when more detail is available.
+> **English / Spanish.** This English section is a short entry point. The main
+> documentation is in Spanish, with links back to the matching pages when more
+> detail is available.
 
 ## What GhostMap is
 
@@ -42,9 +41,9 @@ No external task tracker, no extra config. The tree rebuilds itself as you type.
 - [Install / Access (EN)](/en/install) — current install reality (local VSIX), planned channels.
 - [Legal & Support (EN)](/en/legal-support) — license summary, third-party notices, contact.
 
-## Full documentation (Spanish)
+## Spanish documentation
 
-The detailed reference, architecture, and concepts documentation is in Spanish:
+The reference, architecture, and concepts documentation is in Spanish:
 
 - [Introducción (ES)](/) — landing page of the docs.
 - [Instalación (ES)](/get-started/instalacion) — VSIX install guide.
