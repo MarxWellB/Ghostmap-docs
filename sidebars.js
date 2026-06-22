@@ -8,19 +8,15 @@ const sidebars = {
       label: 'English start',
       collapsed: false,
       items: [
+        'intro',
         'en/overview',
         'en/install',
         'en/legal-support',
       ],
     },
     {
-      type: 'doc',
-      id: 'intro',
-      label: 'Docs detallados (ES)',
-    },
-    {
       type: 'category',
-      label: 'Empezar',
+      label: 'Spanish details',
       collapsed: false,
       items: [
         'get-started/requisitos',
@@ -31,7 +27,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Guía / Conceptos',
+      label: 'Guía / Conceptos (ES)',
       collapsed: false,
       items: [
         'guide/philosophy',
@@ -49,7 +45,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Referencia',
+      label: 'Referencia (ES)',
       collapsed: false,
       items: [
         'reference/sintaxis',
@@ -62,7 +58,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Arquitectura',
+      label: 'Arquitectura (ES)',
       items: [
         'architecture/arquitectura-v1',
         'architecture/loading-policy',
@@ -72,7 +68,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Ayuda',
+      label: 'Ayuda (ES)',
       items: [
         'faq',
         'troubleshooting',
@@ -87,14 +83,14 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Roadmap',
+      label: 'Roadmap (ES)',
       items: [
         'roadmap/vision-v2',
       ],
     },
     {
       type: 'category',
-      label: 'Estado',
+      label: 'Estado (ES)',
       items: [
         'status/estado-del-proyecto',
       ],

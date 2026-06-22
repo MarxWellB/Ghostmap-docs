@@ -6,8 +6,8 @@ slug: /en/overview
 
 # GhostMap — English overview
 
-> **English first.** This is the default start page. Spanish pages hold the
-> detailed reference where English pages are still short.
+> The docs root is English-first. These are short English start pages; Spanish
+> pages hold the detailed reference.
 
 ## What GhostMap is
 
@@ -37,15 +37,16 @@ No external task tracker, no extra config. The tree rebuilds itself as you type.
 
 ## Where to go next (English)
 
+- [Start](/) — default docs entry.
 - [Install / Access (EN)](/en/install) — current install reality (local VSIX), planned channels.
 - [Legal & Support (EN)](/en/legal-support) — license summary, third-party notices, contact.
 
 ## Spanish documentation
 
-The reference, architecture, and concepts documentation is in Spanish:
+The detailed reference, architecture, and concepts documentation is in Spanish:
 
-- [Introducción (ES)](/) — landing page of the docs.
 - [Instalación (ES)](/get-started/instalacion) — VSIX install guide.
+- [Requisitos (ES)](/get-started/requisitos) — supported editors and languages.
 - [Primeros 5 minutos (ES)](/get-started/primeros-5-minutos) — first `@ghost` walkthrough.
 - [Conceptos / Guía (ES)](/guide/philosophy) — symbols, anchors, ownership radius.
 - [Sintaxis (ES)](/reference/sintaxis) — full `@ghost` syntax reference.

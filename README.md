@@ -27,9 +27,9 @@ The docs site is deployed on Vercel at [https://ghostmap-docs.vercel.app/](https
 
 ## Languages
 
-Start in English. Spanish has the detailed reference pages:
+The root docs experience starts in English. Spanish has the detailed reference pages:
 
-- **English** — default entry pages under `docs/en/`: overview,
+- **English** — root start page plus short pages under `docs/en/`: overview,
   install/access, and legal/support.
 - **Spanish** — detailed pages: requisitos, instalación, conceptos, sintaxis,
   referencia de settings, arquitectura, estado del proyecto, roadmap.
@@ -42,8 +42,8 @@ Start in English. Spanish has the detailed reference pages:
 
 | Folder | Purpose |
 |---|---|
+| `docs/intro.md` | English root start page. |
 | `docs/en/` | English overview, install/access, legal & support summary. |
-| `docs/intro.md` | Spanish detailed docs landing page. |
 | `docs/get-started/` | Requisitos, instalación, primeros 5 minutos (ES). |
 | `docs/guide/` | Conceptos: symbols, anchors, ownership, validity gate, etc. (ES). |
 | `docs/reference/` | Syntax, Ghost Tree, diagnostics, settings, rendimiento (ES). |
@@ -52,8 +52,8 @@ Start in English. Spanish has the detailed reference pages:
 | `docs/status/` | Estado del proyecto y limitaciones conocidas (ES). |
 | `docs/changelog.md` | User-visible release notes. |
 | `docs/legal/` | Privacy Policy, Terms of Use, Third-Party Notices, Disclaimer (English-authoritative). |
-| `sidebars.js` | Sidebar layout (English start pages first, then Spanish details). |
-| `docusaurus.config.js` | Site configuration (navbar and footer lead with English start pages). |
+| `sidebars.js` | Sidebar layout (English start first, then Spanish details). |
+| `docusaurus.config.js` | Site configuration (English default locale, navbar, and footer). |
 
 ## Contributing to the docs
 
@@ -64,7 +64,7 @@ To add a new page:
 
 1. Create the `.md` file under the appropriate `docs/<category>/` folder with a YAML frontmatter block (`id`, `title`, `sidebar_label`).
 2. Add the page id to `sidebars.js` under the right category.
-3. Run `npm start` to verify the page renders and links resolve.
+3. Run `npm run build` to verify the page renders and links resolve.
 4. Open a pull request.
 
 ## Related surfaces

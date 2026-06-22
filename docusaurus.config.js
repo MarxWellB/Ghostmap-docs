@@ -4,7 +4,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'GhostMap',
-  tagline: 'Estructura de proyecto, dentro de tu código.',
+  tagline: 'Project structure, inside your code.',
   favicon: 'img/favicon.svg',
 
   future: {
@@ -31,8 +31,8 @@ const config = {
   },
 
   i18n: {
-    defaultLocale: 'es',
-    locales: ['es'],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 
   headTags: [
@@ -95,7 +95,7 @@ const config = {
       announcementBar: {
         id: 'v1-prerelease',
         content:
-          'GhostMap V1 está en pre-release. La sintaxis @ghost y los settings son estables, pero pueden ajustarse en versiones futuras antes de la 1.0.',
+          'GhostMap V1 is in pre-release. @ghost syntax and settings are stable, but may still change before 1.0.',
         backgroundColor: '#0e0e1a',
         textColor: '#eeeef5',
         isCloseable: true,
@@ -108,19 +108,18 @@ const config = {
         },
         items: [
           {
-            to: '/en/overview',
-            label: 'Start (EN)',
+            to: '/',
+            label: 'Start',
             position: 'left',
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'docsSidebar',
+            to: '/get-started/instalacion',
             position: 'left',
-            label: 'Docs (ES)',
+            label: 'Spanish details',
           },
           {
             href: 'mailto:getghostmap@proton.me',
-            label: 'Contacto',
+            label: 'Contact',
             position: 'right',
           },
           {
@@ -135,29 +134,31 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Producto',
+            title: 'Product',
             items: [
-              {label: 'Start (EN)', to: '/en/overview'},
-              {label: 'Docs (ES)', to: '/'},
+              {label: 'Start', to: '/'},
+              {label: 'Install / Access', to: '/en/install'},
+              {label: 'Spanish details', to: '/get-started/instalacion'},
               {label: 'Roadmap', to: '/roadmap/vision-v2'},
-              {label: 'Estado del proyecto', to: '/status/estado-del-proyecto'},
+              {label: 'Project status', to: '/status/estado-del-proyecto'},
             ],
           },
           {
-            title: 'Docs (ES)',
+            title: 'Spanish details',
             items: [
-              {label: 'Instalación detallada', to: '/get-started/instalacion'},
+              {label: 'Instalación', to: '/get-started/instalacion'},
               {label: 'Conceptos', to: '/guide/symbol'},
               {label: 'Referencia', to: '/reference/sintaxis'},
               {label: 'FAQ', to: '/faq'},
             ],
           },
           {
-            title: 'English start',
+            title: 'English start pages',
             items: [
-              {label: 'Overview (EN)', to: '/en/overview'},
-              {label: 'Install / Access (EN)', to: '/en/install'},
-              {label: 'Legal & Support (EN)', to: '/en/legal-support'},
+              {label: 'Home', to: '/'},
+              {label: 'Overview', to: '/en/overview'},
+              {label: 'Install / Access', to: '/en/install'},
+              {label: 'Legal & Support', to: '/en/legal-support'},
             ],
           },
           {
@@ -167,15 +168,15 @@ const config = {
               {label: 'Terms of Use', to: '/legal/terms'},
               {label: 'Third-Party Notices', to: '/legal/notices'},
               {label: 'Disclaimer', to: '/legal/disclaimer'},
-              {label: 'Consultas legales (email)', href: 'mailto:getghostmap@proton.me'},
+              {label: 'Legal questions (email)', href: 'mailto:getghostmap@proton.me'},
             ],
           },
           {
-            title: 'Comunidad',
+            title: 'Community',
             items: [
               {label: 'Support GhostMap', href: 'https://ghostmap-liard.vercel.app/#support'},
               {label: 'getghostmap@proton.me', href: 'mailto:getghostmap@proton.me'},
-              {label: 'Reportar un bug', href: 'mailto:getghostmap@proton.me'},
+              {label: 'Report a bug', href: 'mailto:getghostmap@proton.me'},
             ],
           },
         ],
