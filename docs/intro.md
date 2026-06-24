@@ -2,55 +2,63 @@
 id: intro
 title: GhostMap
 slug: /
-sidebar_label: Introducción
+sidebar_label: Start
 ---
 
-# Estructura de proyecto, dentro de tu código
+# Project structure, inside your code
 
-GhostMap es una extensión de VS Code que convierte comentarios estructurados (`@ghost`) en un mapa navegable de tu proyecto: un árbol semántico que vive junto al código, no en una herramienta externa.
+GhostMap is a VS Code extension that turns structured `@ghost` comments into a navigable map of your code.
 
-## El problema
+## The idea
 
-Los `TODO`, `FIXME` y `HACK` que ya usas no tienen estructura. No se pueden filtrar, no tienen un estado claro y, con el tiempo, se pierden entre miles de líneas. GhostMap les da una gramática mínima y los conecta directamente con los símbolos reales del código: clases, funciones, métodos, interfaces.
+`TODO`, `FIXME`, and `HACK` comments are useful, but they have no structure. GhostMap gives them a small grammar and connects them to real symbols: classes, functions, methods, interfaces, and anchors.
 
-> *"El código es la fuente principal de verdad. Las tareas, refactorizaciones, documentación pendiente y observaciones arquitectónicas deben existir cerca de la implementación que describen."*
+> The code stays the source of truth. Notes about the code live next to the code.
 
-## Cómo se ve en la práctica
+## How it looks
 
-Este comentario:
+Write this:
 
 ```ts
 class AuthService {
-
-  // @ghost description: revisar seguridad | status: todo
+  // @ghost description: validate jwt tokens | status: review
   login() {
+    // ...
+  }
+
+  // @ghost description: revoke session | status: done
+  logout() {
     // ...
   }
 }
 ```
 
-se convierte automáticamente en esto, en el panel lateral de GhostMap:
+GhostMap shows this in the side panel:
 
 ```text
 AuthService
-└── login          (todo) — revisar seguridad
+├── login          (review): validate jwt tokens
+└── logout         (done): revoke session
 ```
 
-Sin configuración adicional, sin archivos externos. El árbol se reconstruye solo cada vez que editas.
+No extra files. No external tracker. The tree rebuilds as you edit.
 
-## Por dónde empezar
+## Start here
 
-- **[Instalación](/get-started/instalacion)** — genera un VSIX local e instálalo en VS Code Desktop.
-- **[Primeros 5 minutos](/get-started/primeros-5-minutos)** — escribe tu primer `@ghost` y mira aparecer el árbol.
-- **[Guía / Conceptos](/guide/philosophy)** — entiende los fundamentos: símbolos, anchors, ownership.
-- **[Referencia](/reference/sintaxis)** — sintaxis completa de `@ghost`, comandos y settings.
+- **[Overview](/overview)**: what GhostMap is and how it fits in your editor.
+- **[Install](/install)**: current install path and planned channels.
+- **[First 5 minutes](/get-started/first-5-minutes)**: write your first `@ghost` and see the tree.
+- **[Syntax reference](/reference/syntax)**: every valid `@ghost` form.
+- **[Settings](/reference/settings)**: tune ownership radius, file budgets, and more.
+- **[Legal & Support](/legal-support)**: license summary and contact.
+- **[Changelog](/changelog)**: release history.
 
-## Tres tipos de Ghost
+## Three Ghost types
 
-| Tipo | Ejemplo | Qué hace |
+| Type | Example | What it does |
 |---|---|---|
-| **Contextual** | `// @ghost description: ... \| status: ...` | Se adjunta automáticamente al símbolo más cercano. |
-| **Named (Semantic Anchor)** | `// @ghost #nombre description: ...` | Crea un nodo propio en el árbol, con identidad propia. |
-| **Range** | `// @ghost #nombre start ... // @ghost end` | Agrupa una sección completa de código bajo un mismo nodo. |
+| **Contextual** | `// @ghost description: ... \| status: ...` | Attaches to the nearest symbol. |
+| **Named (Semantic Anchor)** | `// @ghost #name description: ...` | Creates its own node in the tree. |
+| **Range** | `// @ghost #name start ... // @ghost end` | Groups a whole code section under one node. |
 
-GhostMap Core —todo lo cubierto en esta documentación— es el alcance documentado para V1. GhostMap es un producto propiedad del *GhostMap project owner* (MarxWellB), distribuido bajo la **GhostMap Free Non-Commercial License**: uso personal, educativo y de evaluación sin costo; cualquier uso comercial, de empresa, en producción o que genere ingresos requiere autorización escrita. Las consultas de licenciamiento comercial van a [getghostmap@proton.me](mailto:getghostmap@proton.me).
+GhostMap is source-available under the **GhostMap Free Non-Commercial License**. Personal, educational, and evaluation use is free. Commercial use needs written authorization. For licensing questions, write to [getghostmap@proton.me](mailto:getghostmap@proton.me).

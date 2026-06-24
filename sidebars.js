@@ -3,26 +3,21 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   docsSidebar: [
-    {
-      type: 'doc',
-      id: 'intro',
-      label: 'Introducción',
-    },
+    'intro',
+    'overview',
     {
       type: 'category',
-      label: 'Empezar',
-      collapsed: false,
+      label: 'Get started',
       items: [
-        'get-started/requisitos',
-        'get-started/instalacion',
+        'install',
         'vsix-install',
-        'get-started/primeros-5-minutos',
+        'get-started/requirements',
+        'get-started/first-5-minutes',
       ],
     },
     {
       type: 'category',
-      label: 'Guía / Conceptos',
-      collapsed: false,
+      label: 'Guide',
       items: [
         'guide/philosophy',
         'guide/symbol',
@@ -39,56 +34,40 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Referencia',
-      collapsed: false,
+      label: 'Reference',
       items: [
-        'reference/sintaxis',
+        'reference/syntax',
         'reference/ghost-tree',
         'reference/diagnostics',
         'reference/settings',
-        'reference/rendimiento',
+        'reference/performance',
         'keyboard-shortcuts',
       ],
     },
     {
       type: 'category',
-      label: 'Arquitectura',
+      label: 'Architecture',
       items: [
-        'architecture/arquitectura-v1',
+        'architecture/v1',
         'architecture/loading-policy',
         'architecture/local-state',
-        'data-location',
       ],
     },
     {
       type: 'category',
-      label: 'Ayuda',
+      label: 'Project',
       items: [
-        'faq',
+        'status/project-status',
+        'roadmap/v2',
+        'data-location',
         'troubleshooting',
+        'faq',
         'glossary',
         'uninstall',
       ],
     },
-    {
-      type: 'doc',
-      id: 'changelog',
-      label: 'Changelog',
-    },
-    {
-      type: 'category',
-      label: 'Roadmap',
-      items: [
-        'roadmap/vision-v2',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Estado',
-      items: [
-        'status/estado-del-proyecto',
-      ],
-    },
+    'legal-support',
+    'changelog',
     {
       type: 'category',
       label: 'Legal',
