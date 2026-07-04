@@ -10,7 +10,7 @@ sidebar_label: Third-Party Notices
 
 GhostMap includes third-party components. Each keeps its own upstream license. The GhostMap Free Non-Commercial License applies only to original GhostMap code and does not relicense, replace, or override these components.
 
-The exact upstream LICENSE text for every bundled component listed below ships inside the extension under `wasm/licenses/<component>/`, alongside a `SOURCE.txt` provenance file (upstream URL, SPDX id, fetch date, default-branch HEAD commit at fetch time). The same files are present in the source repository.
+The exact upstream LICENSE text for every bundled component listed below ships inside the extension under `wasm/licenses/<component>/`, alongside a `SOURCE.txt` provenance file (upstream URL, SPDX id, fetch date, default-branch HEAD commit at fetch time).
 
 ## Runtime dependencies
 

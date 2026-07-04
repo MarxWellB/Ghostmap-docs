@@ -10,7 +10,6 @@ const sidebars = {
       label: 'Get started',
       items: [
         'install',
-        'vsix-install',
         'get-started/requirements',
         'get-started/first-5-minutes',
       ],
@@ -48,7 +47,6 @@ const sidebars = {
       type: 'category',
       label: 'Architecture',
       items: [
-        'architecture/v1',
         'architecture/loading-policy',
         'architecture/local-state',
       ],

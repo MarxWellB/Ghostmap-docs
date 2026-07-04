@@ -6,20 +6,20 @@ sidebar_label: Changelog
 
 # Changelog
 
-Every user-visible fix and feature in GhostMap is logged here with the reasoning behind it. This is the product changelog; the round-by-round internal log lives alongside the extension source.
+Every user-visible fix and feature in GhostMap is logged here with the reasoning behind it. This is the public product changelog.
 
-Public history starts at `0.5.0`, the first version stamp shipped outside the maintainers. Earlier work was internal stabilization and is summarized below.
+Public history starts with the current `0.5.3` package. Earlier work was internal stabilization and is summarized below.
 
-## 0.5.0 - June 18, 2026
+## 0.5.3 - June 18, 2026
 
-The first version stamp after multiple rounds of stabilization. Marks GhostMap as feature-complete pre-1.0: the Ghost Tree, the Ghost Engine, the Ghost Index, anchors, diagnostics, and status badges all behave as documented.
+The current pre-1.0 package includes public copy cleanup, Marketplace install guidance, and the stabilized V1 feature set: the Ghost Tree, the Ghost Engine, the Ghost Index, anchors, diagnostics, and status badges all behave as documented.
 
 ### Added
 
 - **Status badges in the Ghost Tree header**: the panel title now shows `[loading]`, `[cached]`, `[stale-cache]`, `[skipped]`, `[no items]`, or `[discarded:...]` so you can see exactly what the engine is doing without opening the console.
 - **Snippet coverage widened to 20 language IDs**: the `gh` / `gw` / `gr` / `gl` / `gxl` / `gxr` prefixes are now available in JavaScript, TypeScript, JSX, TSX, C, C++, C#, Java, Go, Rust, PHP, Kotlin, Swift, Scala, Groovy, Solidity, Python, Ruby, Elixir, and Shell. Snippet availability does not imply Ghost Tree symbol extraction support.
 
-### Fixed (round 6)
+### Fixed
 
 - **C# constructors and `var` fields**: K&R and Allman constructors now appear in the Ghost Tree. Class-level `var` fields are detected; local `var` inside method bodies remains suppressed.
 - **PHP method recognition in large files**: a day-1 regex asymmetry where `public function foo()` required `publicfunction foo()` to match was fixed. Whitespace is now consumed uniformly across all access modifiers.
@@ -52,13 +52,13 @@ The first version stamp after multiple rounds of stabilization. Marks GhostMap a
 - 166 passing unit and matrix tests, 6 passing smoke scripts.
 - Compile clean.
 
-## Pre-0.5.0: v1-coalesce-publish series
+## Earlier V1 stabilization
 
 - **Publish coalescer**: 87% fewer TreeView event fires during a 60k-line progressive scan.
 - **Progressive scanner**: regex-based scanner for large files, batch-yielding via `setImmediate` to keep the editor responsive. C++ 60k scan: from ~19.5 s to ~33 ms.
 - **Resumable scan**: mid-scan tab switches no longer discard minutes of partial work.
 - **SHA-256 cache fast path**: tab switch to a warm-cached file skips fingerprinting entirely.
-- **Local state persistence**: the `.ghostmap/ghostmap.json` snapshot file was introduced.
+- **Local state persistence**: saved Ghost Tree snapshots were introduced.
 
 ## Pre-V1 baseline
 

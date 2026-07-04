@@ -32,7 +32,7 @@ No. The extension does not send project data (code, file content, paths, telemet
 
 ## Does it work on VS Code Web / vscode.dev?
 
-In a limited way. GhostMap declares itself as `extensionKind: ["workspace"]`, which means it requires a full extension host. In virtual environments like vscode.dev, the Ghost Tree works in memory but persistence to `.ghostmap/ghostmap.json` is not available.
+In a limited way. In virtual or browser-hosted VS Code environments, GhostMap can show an in-memory Ghost Tree for the current session, but saved local Ghost Tree snapshots may not be available.
 
 ## What about the `.ghostmap/` folder?
 
@@ -81,16 +81,14 @@ Yes, one: **Ctrl+Alt+G** (**Cmd+Alt+G** on macOS) runs `GhostMap: Refresh` while
 
 ## What license does GhostMap V1 use?
 
-GhostMap V1 ships as **source-available** under the **GhostMap Free Non-Commercial License**: the code is readable and personal, educational, and evaluation/testing use is free. Commercial, business, production, or revenue-generating use requires written authorization (or a future commercial license flow). Donations do not grant commercial rights. The Enterprise vision is roadmap, not shipped today. See the Terms of Use (shipped as `LICENSE`; questions to getghostmap@proton.me) and the [Roadmap](/roadmap/v2).
+GhostMap V1 ships as **closed-source** software under the **GhostMap Free Non-Commercial License**: personal, educational, and evaluation/testing use is free. Commercial, business, production, or revenue-generating use requires written authorization (or a future commercial license flow). Donations do not grant commercial rights. The Enterprise vision is roadmap, not shipped today. See the Terms of Use (shipped as `LICENSE`; questions to getghostmap@proton.me) and the [Roadmap](/roadmap/v2).
 
-## Why is GhostMap not on VS Code Marketplace or Open VSX yet?
+## Where do I install GhostMap?
 
-Today GhostMap installs via a **local VSIX** built from the repo with `npx @vscode/vsce package`. GitHub Releases is a planned post-tag channel; there is no public release yet.
+Install GhostMap from the VS Code Marketplace:
 
-- **VS Code Marketplace: pending.** The package does not have a `publisher` configured in `package.json` yet; the publisher has to be registered in Marketplace and the first `vsce publish` has to run. In the meantime, installing by VSIX is functionally equivalent to the Marketplace, just without automatic in-editor updates.
-- **Open VSX: planned.** It will be the bridge for users of **VSCodium, Cursor, Gitpod**, and other editors that consume Open VSX instead of Microsoft's Marketplace. Planned to publish before or in parallel with Marketplace approval. The publish script (`publish:open-vsx`, calling `ovsx publish`) is already prepared in `package.json` of the `genesis` repo; namespace registration in open-vsx.org, the token, and the first publish are pending.
-
-While those channels are pending / planned, the official path is in **[Install](/install)** and **[Install from VSIX](/vsix-install)**.
+- [Install from VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=Ghostmap.ghostmap)
+- [Open in VS Code](vscode:extension/Ghostmap.ghostmap)
 
 ## How do I uninstall it?
 

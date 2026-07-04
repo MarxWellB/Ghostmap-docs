@@ -13,13 +13,13 @@ sidebar_label: Terms of Use
 
 ## 1. Product identification & ownership
 
-GhostMap is a product. The GhostMap software, name, branding, ghost mark, and original source code are owned by the GhostMap project owner / MarxWellB. GhostMap is source-available under the GhostMap Free Non-Commercial License; the source is visible only to make installation, audit, and review possible under these terms. Commercial, company, or production use requires written authorization (see section 5). A copy of the GhostMap Free Non-Commercial License ships under `LICENSE` in the source repository.
+GhostMap is a product. The GhostMap software, name, branding, ghost mark, and original source code are owned by the GhostMap project owner / MarxWellB. GhostMap is closed-source software distributed under the GhostMap Free Non-Commercial License; the original source code is not published or distributed to end users. Commercial, company, or production use requires written authorization (see section 5). A copy of the GhostMap Free Non-Commercial License ships under `LICENSE` in the extension package.
 
-Third-party components incorporated into the extension keep their own upstream licenses and are listed in the `THIRD_PARTY_NOTICES.md` file shipped in the source repository.
+Third-party components incorporated into the extension keep their own upstream licenses and are listed in the `THIRD_PARTY_NOTICES.md` file shipped in the extension package.
 
 ## 2. Allowed use without a commercial license
 
-You may use, copy, modify, and run GhostMap without a commercial license for:
+You may install and run GhostMap without a commercial license for:
 
 - Personal use.
 - Educational use.
@@ -52,7 +52,7 @@ GhostMap is currently in pre-release (V1 series). Behavior may change between ve
 
 ## 7. Third-party components
 
-GhostMap incorporates third-party components, each licensed under its own terms. The GhostMap license does not replace or override those upstream licenses. See the `THIRD_PARTY_NOTICES.md` file shipped in the source repository for attribution and license details.
+GhostMap incorporates third-party components, each licensed under its own terms. The GhostMap license does not replace or override those upstream licenses. See the `THIRD_PARTY_NOTICES.md` file shipped in the extension package for attribution and license details.
 
 ## 8. Trademarks and product identity
 

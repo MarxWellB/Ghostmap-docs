@@ -6,19 +6,14 @@ sidebar_label: Project status
 
 # Project status
 
-> **V1 in final testing:**
-> GhostMap V1 has good functional and test coverage, but is still going through final manual validation before a wider release. Some functions may behave slightly differently from the description until those validations are finished.
+> **V1, pre-1.0 versioning:**
+> GhostMap V1 has good functional and test coverage. Some functions may still receive small refinements between versions; see the [Changelog](/changelog) for what changed in each release.
 
 ## Distribution status
 
-| Channel | Status | Notes |
-| --- | --- | --- |
-| Local VSIX | Available | Main path today. See [Install](/install) and [Install from VSIX](/vsix-install). |
-| GitHub Releases | Planned post-tag | No public release yet. Future releases can attach the VSIX after a tag is created. |
-| VS Code Marketplace | Pending | The package does not have a `publisher` yet; there is no official listing. |
-| Open VSX (VSCodium, Cursor, etc.) | Planned | Recommended bridge for Open-VSX-compatible editors. The `publish:open-vsx` script (`ovsx publish`) is already prepared in `package.json`; namespace, token, and first publish are pending. |
+GhostMap is available on the VS Code Marketplace. See [Install](/install).
 
-No change in these channels affects code you already have installed via VSIX: once installed, the extension runs locally with no network access.
+Once installed, the extension runs locally with no network access.
 
 ## Available today (v1)
 

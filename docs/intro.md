@@ -46,7 +46,7 @@ No extra files. No external tracker. The tree rebuilds as you edit.
 ## Start here
 
 - **[Overview](/overview)**: what GhostMap is and how it fits in your editor.
-- **[Install](/install)**: current install path and planned channels.
+- **[Install](/install)**: Marketplace install path.
 - **[First 5 minutes](/get-started/first-5-minutes)**: write your first `@ghost` and see the tree.
 - **[Syntax reference](/reference/syntax)**: every valid `@ghost` form.
 - **[Settings](/reference/settings)**: tune ownership radius, file budgets, and more.
@@ -61,4 +61,4 @@ No extra files. No external tracker. The tree rebuilds as you edit.
 | **Named (Semantic Anchor)** | `// @ghost #name description: ...` | Creates its own node in the tree. |
 | **Range** | `// @ghost #name start ... // @ghost end` | Groups a whole code section under one node. |
 
-GhostMap is source-available under the **GhostMap Free Non-Commercial License**. Personal, educational, and evaluation use is free. Commercial use needs written authorization. For licensing questions, write to [getghostmap@proton.me](mailto:getghostmap@proton.me).
+GhostMap is closed-source software distributed under the **GhostMap Free Non-Commercial License**. Personal, educational, and evaluation use is free. Commercial use needs written authorization. For licensing questions, write to [getghostmap@proton.me](mailto:getghostmap@proton.me).

@@ -91,4 +91,4 @@ All commands also appear on the **GhostMap** panel toolbar.
 
 ## Next step
 
-If you want to understand how the pipeline works under the hood, continue with **[Architecture v1](/architecture/v1)**.
+Continue with **[Loading Policy](/architecture/loading-policy)** to see how GhostMap handles large files.

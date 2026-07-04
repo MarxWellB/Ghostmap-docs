@@ -94,7 +94,7 @@ Operation that recomputes the tree for the active document. Triggered by a tab s
 
 ## Scheduler
 
-Component that manages the refresh queue. Keeps at most one in-flight and one queued per file. Spam clicks collapse to the "last". See [Architecture](/architecture/v1).
+Component that manages the refresh queue. Keeps at most one in-flight and one queued per file. Spam clicks collapse to the "last".
 
 ## Semantic Anchor
 

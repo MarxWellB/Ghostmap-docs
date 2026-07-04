@@ -40,13 +40,12 @@ No external task tracker, no extra config. The tree rebuilds itself as you type.
 ## Where to go next
 
 - [Start](/): docs entry page.
-- [Install](/install): current install reality (local VSIX), planned channels.
+- [Install](/install): Marketplace install path.
 - [Requirements](/get-started/requirements): VS Code version, supported languages, tier matrix.
 - [First 5 minutes](/get-started/first-5-minutes): your first `@ghost` walkthrough.
 - [Guide / Philosophy](/guide/philosophy): symbols, anchors, ownership.
 - [Syntax reference](/reference/syntax): every valid `@ghost` form.
 - [Settings](/reference/settings): every `ghostmap.*` setting.
-- [Architecture](/architecture/v1): the pipeline behind the tree.
 - [Project status](/status/project-status): known limits.
 - [Roadmap: v2 vision](/roadmap/v2): future direction.
 - [FAQ](/faq), [Troubleshooting](/troubleshooting), [Glossary](/glossary).
@@ -55,12 +54,11 @@ No external task tracker, no extra config. The tree rebuilds itself as you type.
 
 ## Project status (short)
 
-- Version 0.5.0, pre-release.
+- Version 0.5.3.
 - VS Code engine `^1.85.0`.
 - 19 languages supported across quality tiers.
-- Distribution today: locally built VSIX, requested by email.
-- Planned channels: GitHub Releases (post-tag), VS Code Marketplace, Open VSX. None of these are active yet: see [Install](/install) and [Project status](/status/project-status).
+- Distribution: VS Code Marketplace.
 
 ## License (short)
 
-GhostMap is source-available under the **GhostMap Free Non-Commercial License**. Personal, educational, and evaluation use is free. Commercial use needs a written license. The `LICENSE` file shipped with the extension is the authoritative legal document. See [Legal & Support](/legal-support).
+GhostMap is closed-source software distributed under the **GhostMap Free Non-Commercial License**. Personal, educational, and evaluation use is free. Commercial use needs a written license. The `LICENSE` file shipped with the extension is the authoritative legal document. See [Legal & Support](/legal-support).

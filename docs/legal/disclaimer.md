@@ -13,7 +13,7 @@ sidebar_label: Disclaimer
 
 ## Pre-release software
 
-GhostMap is currently in the V1 series of releases. The published version number is **0.5.0**, which under semver signals "feature-complete pre-1.0". The public API surface (settings, command names, persistence schema) is intended to stay stable through V1, but small changes are still possible until a 1.0 ships.
+GhostMap is currently in the V1 pre-release series. The current public package is **0.5.3**, which under semver signals pre-1.0 software. The public API surface (settings, command names, persistence schema) is intended to stay stable through V1, but small changes are still possible until a 1.0 ships.
 
 ## "Best-effort" languages
 
@@ -73,7 +73,7 @@ GhostMap is engineered to stay responsive on files up to 60,000 lines and under 
 
 ## Liability
 
-The full disclaimer of warranty and limitation of liability is in the GhostMap Terms of Use, included with the source repository as `LICENSE` (further questions: getghostmap@proton.me). GhostMap is provided as-is under the GhostMap Free Non-Commercial License.
+The full disclaimer of warranty and limitation of liability is in the GhostMap Terms of Use, included with the extension package as `LICENSE` (further questions: getghostmap@proton.me). GhostMap is provided as-is under the GhostMap Free Non-Commercial License.
 
 ## Reporting an issue
 

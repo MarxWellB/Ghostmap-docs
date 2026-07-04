@@ -34,11 +34,10 @@ Subpage routing relies on `vercel.json` setting `cleanUrls: true` together with 
 | `docs/intro.md` | Root start page (slug `/`). |
 | `docs/overview.md` | Product overview (slug `/overview`). |
 | `docs/install.md` | Install / access (slug `/install`). |
-| `docs/vsix-install.md` | Detailed VSIX install reference. |
 | `docs/get-started/` | Requirements and the first-5-minutes walkthrough. |
 | `docs/guide/` | Concepts: symbols, anchors, ownership, validity gate. |
 | `docs/reference/` | Syntax, Ghost Tree, diagnostics, settings, performance. |
-| `docs/architecture/` | V1 pipeline, loading policy, local state. |
+| `docs/architecture/` | Loading policy, local state. |
 | `docs/roadmap/` | V2 vision. |
 | `docs/status/` | Project status and known limits. |
 | `docs/legal-support.md` | License summary and support contact (slug `/legal-support`). |
@@ -61,4 +60,4 @@ To add a new page:
 ## Related surfaces
 
 - Marketing site: [ghostmap-liard.vercel.app](https://ghostmap-liard.vercel.app/).
-- Extension source: source-available; the public repo URL will be announced at release. For pre-release access write to [getghostmap@proton.me](mailto:getghostmap@proton.me).
+- Extension source: closed-source, distributed under the GhostMap Free Non-Commercial License. For licensing questions, contact [getghostmap@proton.me](mailto:getghostmap@proton.me).

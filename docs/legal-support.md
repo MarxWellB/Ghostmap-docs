@@ -11,7 +11,7 @@ slug: /legal-support
 
 ## License (summary)
 
-GhostMap is owned by the GhostMap project owner / MarxWellB and is source-available under the **GhostMap Free Non-Commercial License**.
+GhostMap is owned by the GhostMap project owner / MarxWellB and is closed-source software distributed under the **GhostMap Free Non-Commercial License**.
 
 - **Free for:** personal, educational, evaluation and testing, and other non-commercial use.
 - **Requires written authorization for:** company, business, production, revenue-generating, client, resale, white-label, marketplace-republish, and competing-product use.
@@ -23,7 +23,7 @@ Voluntary donations and supporter contributions are separate from commercial aut
 
 | Document | Where to read it |
 | --- | --- |
-| Full license text | The `LICENSE` file shipped inside the VSIX. The pages below summarize and link the [Terms of Use](/legal/terms), [Privacy Policy](/legal/privacy), and [Third-Party Notices](/legal/notices). |
+| Full license text | The `LICENSE` file shipped inside the extension package. The pages below summarize and link the [Terms of Use](/legal/terms), [Privacy Policy](/legal/privacy), and [Third-Party Notices](/legal/notices). |
 | Privacy Policy | [/legal/privacy](/legal/privacy) |
 | Terms of Use | [/legal/terms](/legal/terms) |
 | Third-Party Notices | [/legal/notices](/legal/notices) |
@@ -31,7 +31,7 @@ Voluntary donations and supporter contributions are separate from commercial aut
 
 ## Third-party components
 
-GhostMap bundles `web-tree-sitter` and 19 Tree-sitter grammars. Each component keeps its own upstream license. The exact upstream `LICENSE` and `SOURCE.txt` files for every bundled grammar ship inside the extension, under `wasm/licenses/`, and are mirrored in the `THIRD_PARTY_NOTICES.txt` file in the VSIX.
+GhostMap bundles `web-tree-sitter` and 19 Tree-sitter grammars. Each component keeps its own upstream license. The exact upstream `LICENSE` and `SOURCE.txt` files for every bundled grammar ship inside the extension, under `wasm/licenses/`, and are mirrored in the `THIRD_PARTY_NOTICES.txt` file in the extension package.
 
 ## Support
 
@@ -39,7 +39,7 @@ There is one support channel today: [getghostmap@proton.me](mailto:getghostmap@p
 
 Use this address for:
 
-- Requesting a VSIX (see [Install](/install)).
+- Install help (see [Install](/install)).
 - Bug reports and troubleshooting.
 - Commercial licensing inquiries.
 - Partnership and integration questions.
